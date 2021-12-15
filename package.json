@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "deploy": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output styles.cssstyles.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output styles.css styles.css",
     "build-cleancss": "cleancss -o styles.css styles.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass styles.css",
