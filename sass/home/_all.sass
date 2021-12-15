@@ -1,0 +1,38 @@
+.title
+    // z-index: 1
+    text-shadow: 0 0 20px rgba(white, .25)
+
+    @media screen and (min-width: 576px)
+        font-size: 4rem
+    @media screen and (min-width: 768px)
+        font-size: 5rem
+
+    @media screen and (min-width: 1200px)
+        font-size: 7.5rem
+    
+.description
+    // z-index: 1
+.comingsoon
+    // border: 1px solid white
+    background-color: white
+    color: $primary
+
+.style
+    position: absolute
+    z-index: -1
+    width: 50rem
+    opacity: .5
+
+    &--left
+        left: -5rem
+        top: 50%
+        transform: translateY(-50%)
+    &--bottom-right
+        display: none
+        right: 2.5rem
+        bottom: -10rem
+    &--top-right
+        display: none
+        right: -10rem
+        top: -25rem
+        // filter: drop-shadow( 0 0 20px rgba(white, .5))
